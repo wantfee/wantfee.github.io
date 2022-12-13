@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u91cd\u590d\u7684\u539f\u5219\u2014\u2014\u4ece\u97f3\u4e50\u804a\u5230UI\u8bbe\u8ba1","permalink":"/blog/the principle of repetition -- from music to UI design"}]}')}}]);

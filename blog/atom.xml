@@ -1,70 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wantfee.github.io/blog</id>
-    <title>Manta App Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <title>UI designer &amp; Web Developer. Blog</title>
+    <updated>2022-12-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wantfee.github.io/blog"/>
-    <subtitle>Manta App Blog</subtitle>
+    <subtitle>UI designer &amp; Web Developer. Blog</subtitle>
     <icon>https://wantfee.github.io/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>welcome</id>
-        <link href="https://wantfee.github.io/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <title type="html"><![CDATA[重复的原则——从音乐聊到UI设计]]></title>
+        <id>the principle of repetition -- from music to UI design</id>
+        <link href="https://wantfee.github.io/blog/the principle of repetition -- from music to UI design"/>
+        <updated>2022-12-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近在读《聆听音乐》这本书。忽然觉得音乐的创作和UI设计存在着很多相似性，一些基本的创作原则是共通的。]]></summary>
+        <content type="html"><![CDATA[<p>最近在读《聆听音乐》这本书。忽然觉得音乐的创作和UI设计存在着很多相似性，一些基本的创作原则是共通的。</p><p>对于音乐来讲，一个非常重要的方面就是曲式，也就是乐曲的结构，无论是流行音乐还是古典音乐，曲式都是非常重要的一个方面。从简单的二段式、三段式，到主题与变奏、回旋曲直至篇幅更大、结构更为复杂的奏鸣曲—快板曲式，其中一个重要的创作手法就是重复。我们经常可以很容易的发现，一个主题在整个乐曲中不断地再现，这种再现有时是简单的重复，但大多数时候是变化后的重复。</p><p>那么为什么要重复？一首乐曲可不可以从开始到结束完全不重复？从一段乐思开始不断地进行线性的发展，从始至终完全是新的旋律？当然可以，虽然这样的曲式运用的并不多。浪漫主义时期根据诗歌谱曲的艺术歌曲会见到这样的例子，通常把这种没有明显重复，旋律和和声总在不断变化的作品，成为通谱体。</p><p>但从大量的乐曲上来看，重复的创造手法，无疑具有巨大的价值。原因就在于重复能够让整个作品更有统一感和完整性，它更符合人类审美心理上的需求。人类会本能地对未知事物的整体进行细分，将其梳理为更小的结构，便于理解和认知。对于毫无头绪，错综复杂完全理不出结构的内容，会本能地加以排斥，如果在结构上不能很好的认知，会觉得缺乏秩序和美感。</p><p>这样的心理放在UI设计上也是同样的道理。一个好的设计作品抛开功能性先不谈，从视觉审美上来讲无疑和音乐作品一样，需要传达一种情绪和感受。当然，相较于视觉领域的设计，音乐的这种目的并不是总是那么直接，尤其在浪漫主义时期以前。而对于设计来讲，这种情绪和感受往往是力度越强效果越好。</p><p>因此，在设计方案的构思中，为了更好的表达情绪，通常先要确立一种风格，这样才能更好的为设计提供明确的方向。之后就是在大的风格框架内不断运用重复的设计手法，持续的加强设计的力度，让期望的某种情绪表达的更加充分。因此无论是排版、配色、形状还是质感，都需要不断重复。</p><p>我们以下面这个设计作品为为例，对设计中重复的手法进行具体的说明。</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/assets/images/case-44e20f49bf606f4e3c889a6f7ee6c770.png" width="1080" height="678" class="img_ev3q"></p><p>从整体情绪上来看，这个设计给人干净柔和的感受。这是和版式上大面积留白的不断重复运用直接相关的。突出的表现在每个信息区域的顶部，也就是它的标题部分。</p><p>拿banner下面的第一个信息区域来讲，和通常的设计相比，这里有意识的和banner区域留出了更多的间距。标题处的单行主标题和两行副标题垂直相叠，字号拉开差距，小范围进行对比增加层次感后向左对齐，在右侧留出了非常大的空白区域。</p><p>同样的，在内页的设计中也重复的运用了这样的设计手法。无论标题是向左对齐还是居中对齐，每个区域之间的留白空间非常大，但每个区域内的元素的间距都相对紧密，否则在板式上会显得过于松散，这样有张有弛的结构，形成了紧-疏-紧-疏的节奏，这和乐曲中A-B-A结构的曲式有着异曲同工之妙。</p><p>再来看色彩方案。很明显，这个设计采用了补色的色彩搭配方案，其中橙色为主色，而青色处于相对次要的位置。这样的配色突出表现在banner区域，可以观察到，图片中山崖及房屋部分为橙色，占据大约2/3的面积，作为图片背景的森林为青色，占据1/3的面积。需要特别指出的是，图片上的色彩大概率经过了后期处理，尤其是青色的森林树木，在原片更偏绿色的基础上将色相向蓝色方向调整了一些，目的是和橙色更加搭配。</p><p>页面中除了最显眼的banner图片，还有很多图片，如果不在色彩上进行重复，会让设计变得杂乱不堪，因此可以看到，无论任何一张图片，都重复的运用了这个色彩方案，拿右下角的建筑图来说，天空和建筑的部分色彩上虽然纯度很低，但明显偏向橙色。那么青色在哪里？仔细观看就能发现图片右下角部分的路面是呈青色的，面积虽然很小，但依然和整体的色彩方案保持一致。另外前面讲到的留白也在图片上得到了重复，首页的四张小图顶部都保留了纯净的天空，使得图片主角突出，并强化了干净的设计感受。但不得不说一句，内页的设计明显可以看出不如首页用心，无论在色彩的重复上还是图片的选择上控制不够，因此相较于首页，内页稍显杂乱。</p><p>除了色彩上的重复，在形状上，也可以观察到这样的重复。可以看到圆角矩形在设计中不断地出现。无论是图片还是按钮，都使用了圆角元素。相较于直角，圆角更加柔和，并且显得干净。这和我们期望在旅行中得到舒适、周到、温暖的服务的感受其实是有关联的。</p><p>从这个案例，我们可以看到，从色彩到版式，设计中应用了大量的重复的手法，无论是音乐还是设计，重复是创作中非常重要的方面。深刻的理解重复的原则，对于设计的提升是必不可少的。</p>]]></content>
         <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
+            <name>JeffWang</name>
+            <uri>https://wantfee.github.io</uri>
         </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
-        </author>
-        <category label="facebook" term="facebook"/>
-        <category label="hello" term="hello"/>
-        <category label="docusaurus" term="docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MDX Blog Post]]></title>
-        <id>mdx-blog-post</id>
-        <link href="https://wantfee.github.io/blog/mdx-blog-post"/>
-        <updated>2021-08-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
-        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p><div class="theme-admonition theme-admonition-tip alert alert--success admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>提示</div><div class="admonitionContent_S0QG"><p>Use the power of React to create interactive blog posts.</p><div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><button>Click me!</button></div></div>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <category label="docusaurus" term="docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>long-blog-post</id>
-        <link href="https://wantfee.github.io/blog/long-blog-post"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p><p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Endilie Yacop Sucipto</name>
-            <uri>https://github.com/endiliey</uri>
-        </author>
-        <category label="hello" term="hello"/>
-        <category label="docusaurus" term="docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>first-blog-post</id>
-        <link href="https://wantfee.github.io/blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Gao Wei</name>
-            <uri>https://github.com/wgao19</uri>
-        </author>
-        <category label="hola" term="hola"/>
-        <category label="docusaurus" term="docusaurus"/>
+        <category label="音乐" term="音乐"/>
+        <category label="重复" term="重复"/>
+        <category label="UI" term="UI"/>
     </entry>
 </feed>
