@@ -1,5 +1,5 @@
 ---
-slug: case analysis and summary of design features of 10 children's websites
+slug: case-analysis-and-summary-of-design-features-of-10-children's-websites
 title: 10个儿童网站个案分析及设计特点总结
 authors: [JeffWang]
 tags: [案例分析, 儿童, Web]

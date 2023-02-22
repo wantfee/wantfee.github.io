@@ -1,5 +1,5 @@
 ---
-slug: the principle of repetition -- from music to UI design
+slug: the-principle-of-repetition-from-music-to-UI-design
 title: 重复的原则——从音乐聊到UI设计
 authors: [JeffWang]
 tags: [音乐, 重复, UI]
