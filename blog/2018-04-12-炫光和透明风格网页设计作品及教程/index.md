@@ -2,7 +2,7 @@
 slug: works-and-tutorials-of-web-design-about-dazzling-and-transparent-style
 title: 炫光和透明风格网页设计作品及教程
 authors: [JeffWang]
-tags: [教程、Web]
+tags: [教程,Web]
 ---
 
 炫彩和透明风格的网页设计是我个人喜欢的设计风格之一。下面的设计作品和教程是我接触和收集到的这一类的设计风格的代表。这些作品和教程可以在我们动手创建个人的网页设计时给我们以启发，并且教会我们实际实现的技巧。总结起来，这些设计有着如下共同特点：

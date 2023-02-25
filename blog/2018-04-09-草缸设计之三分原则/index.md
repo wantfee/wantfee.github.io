@@ -2,7 +2,7 @@
 slug: the-three-part-principle-of-straw-tank-design
 title: 草缸设计之三分原则
 authors: [JeffWang]
-tags: [草缸、自然]
+tags: [草缸,自然]
 ---
 
 构图是草缸造景的基础环节，是决定造景成败的关键性因素，造景样式可能千变万化，但其中却包含普遍适用的原则。了解这些背后的设计原则对于指导造景是非常有帮助的，这篇文章我将通过几个案例来尝试分析一下其中的规律。

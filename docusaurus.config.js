@@ -41,6 +41,8 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -66,6 +68,7 @@ const config = {
         items: [
           {to: '/work', label: '作品', position: 'left'},
           {to: '/blog', label: '博客', position: 'left'},
+          // {to: '/about', label: '关于', position: 'left'}
         ],
       },
       footer: {
