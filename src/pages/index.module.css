@@ -3,13 +3,23 @@
  * and scoped locally.
  */
 
+.allContainer {
+  /* background-color: rgb(255, 255, 255); */
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: white;
-  color:#434343;
+  /* background-color: white; */
+  color: #434343;
 }
 
 @media screen and (max-width: 996px) {
