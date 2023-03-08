@@ -1,0 +1,17 @@
+.allWorkContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: 60px;
+  /* height: 100vh; */
+  font-size: 16px;
+  /* background-color: #e8e8e8; */
+  padding: 60px;
+}
+
+.work {
+  width: 400px;
+  height: 340px;
+  background-color: rgb(243, 243, 243);
+}

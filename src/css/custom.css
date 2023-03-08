@@ -12,13 +12,17 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  
 }
 
 .navbar {
   padding: 30px 50px;
   height: auto;
   box-shadow: none;
+  background-color: transparent;
+}
+
+.footer{
+  background-color: transparent;
 }
 
 body,
@@ -30,4 +34,15 @@ h5,
 h6,
 p {
   font-family: Montserrat, "Source Han Sans TC", sans-serif;
+}
+
+/* 先要使用::-webkit-scrollbar 属性使滚动条整个默认样式失效 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #a4a4a4;
 }
