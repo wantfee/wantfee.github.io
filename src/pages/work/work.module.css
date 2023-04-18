@@ -1,13 +1,13 @@
 .allWorkContainer {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(1, 380px);
+  grid-template-columns: repeat(3, 31%);
+  grid-template-rows: repeat(1, 340px);
   place-content: center center;
-  gap: 60px;
+  gap: 40px;
   /* height: 100vh; */
   font-size: 16px;
   /* background-color: #e8e8e8; */
-  padding: 100px 60px;
+  padding: 30px 50px;
   place-items: center center;
 }
 
@@ -20,16 +20,8 @@
   align-items: center;
 }
 
-.workEmpty {
+.work img {
   border-radius: 8px;
-  color:#aaaaaa;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(247, 247, 247);
 }
 
 .workTitle {

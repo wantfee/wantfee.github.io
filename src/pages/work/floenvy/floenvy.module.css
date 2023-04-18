@@ -1,4 +1,23 @@
 .allContainer {
   margin: 100px auto;
-  max-width: 1200px;
+  max-width: 1000px;
+}
+
+.allContainer h1{
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.allContainer h2{
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.description{
+  margin-bottom: 60px;
+}
+
+.allContainer img{
+  border-radius: 8px;
 }
