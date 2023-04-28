@@ -27,9 +27,10 @@ export default function Home(): JSX.Element {
     >
       <div className={styles.allContainer}>
         {/* <HomepageHeader /> */}
-        <main>{/* <HomepageFeatures /> */}
-        <h1>Hi! I'm JeffWang.</h1>
-        <p>An UI designer & Web Developer in China.</p>
+        <main>
+          {/* <HomepageFeatures /> */}
+          <h1>Hi ! I'm JeffWang.</h1>
+          <p>An UI designer & Web Developer in China.</p>
         </main>
       </div>
     </Layout>

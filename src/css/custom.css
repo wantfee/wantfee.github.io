@@ -15,10 +15,29 @@
 }
 
 .navbar {
-  padding: 30px 50px;
+  padding: 40px 50px;
   height: auto;
   box-shadow: none;
-  background-color: transparent;
+  /* background-color: transparent; */
+  /* background-color: rebeccapurple; */
+}
+
+.navbar__brand{
+  margin-right: 80px;
+}
+
+.navbar__logo{
+  height:60px;
+}
+
+.navbar__link{
+  margin-right: 20px;
+  margin-top: 12px;
+}
+
+.navbar__link:not(:last-child)::after{
+  content: "/";
+  padding-left: 40px;
 }
 
 .footer{
@@ -36,6 +55,10 @@ p {
   margin: 0;
   padding: 0;
   font-family: Montserrat, "Source Han Sans TC", sans-serif;
+}
+
+h1{
+  font-size: 48px;
 }
 
 /* 先要使用::-webkit-scrollbar 属性使滚动条整个默认样式失效 */

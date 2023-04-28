@@ -10,10 +10,12 @@ export default function Works() {
     <Layout title="Work" description="Here's the work page">
       <div className={classes.allWorkContainer}>
         <div className={classes.work}>
-          <img
-            src={moreOrLess}
-            style={{ width: "100%", marginBottom: "30px" }}
-          />
+          <a href="/work/more-or-less">
+            <img
+              src={moreOrLess}
+              style={{ width: "100%", marginBottom: "30px" }}
+            />
+          </a>
           <h3 className={classes.workTitle}>多少</h3>
         </div>
         <div className={classes.work}>
