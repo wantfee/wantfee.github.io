@@ -3,6 +3,7 @@ import classes from "./floenvy.module.css";
 import FloenvyProductPage from "@site/static/img/floenvy-product-page.svg";
 import floenvy from "@site/static/img/floenvy.jpg";
 import mobileFeature from "@site/static/img/floenvy-mobile-feature.png";
+import productPage from "@site/static/img/floenvy-product-page.png";
 
 export default function Hello() {
   return (
@@ -18,6 +19,11 @@ export default function Hello() {
         <h2>Mobile Feature Landing Page</h2>
         <img
           src={mobileFeature}
+          style={{ width: "100%", marginBottom: "10px" }}
+        />
+        <h2>Product Page</h2>
+        <img
+          src={productPage}
           style={{ width: "100%", marginBottom: "30px" }}
         />
       </div>
