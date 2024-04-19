@@ -22,25 +22,25 @@
   /* background-color: rebeccapurple; */
 }
 
-.navbar__brand{
+.navbar__brand {
   margin-right: 80px;
 }
 
-.navbar__logo{
-  height:60px;
+.navbar__logo {
+  height: 60px;
 }
 
-.navbar__link{
+.navbar__link {
   margin-right: 20px;
   margin-top: 12px;
 }
 
-.navbar__link:not(:last-child)::after{
+.navbar__link:not(:last-child)::after {
   content: "/";
   padding-left: 40px;
 }
 
-.footer{
+.footer {
   background-color: transparent;
 }
 
@@ -54,10 +54,10 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font-family: Montserrat, "Source Han Sans TC", sans-serif;
+  font: 14px Montserrat, "Source Han Sans TC", sans-serif;
 }
 
-h1{
+h1 {
   font-size: 48px;
 }
 

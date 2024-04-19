@@ -3,14 +3,194 @@
  * and scoped locally.
  */
 
-.allContainer {
+.container {
   /* background-color: rgb(255, 255, 255); */
-  height:100%;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: rebeccapurple; */
+}
+
+.contentContainer {
+  margin: 0 auto;
+  max-width: 1280px;
+  /* background-color: tan; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+  /* background-color: aqua; */
+}
+
+.logoLetters {
+  color: #ee6c4d;
+}
+
+.navi,
+.social {
+  flex: 1;
+  /* background-color: tomato; */
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.naviItem {
+  margin-right: 40px;
+}
+
+.naviItem:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.socialItem {
+  margin-left: 20px;
+}
+
+.mainContent {
+  padding-top: 100px;
+  /* background-color: rgb(120, 120, 16); */
+  flex: 1;
+}
+
+.mainContent h1 {
+  font-size: 60px;
+  font-weight: 600;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  /* background-color: tomato; */
+}
+
+.imageAndServiceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.serviceContainer,
+.personalInfoContainer {
+  flex: 1;
+  height: 100%;
+}
+
+.serviceContainer {
+  padding-right: 100px;
+  /* background-color: bisque; */
+}
+
+.serviceContainer h2,
+.personalInfoContainer h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.serviceItemContainer {
+  margin-bottom: 30px;
+}
+
+.serviceItemContainer h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.serviceItemContainer p {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+.personalInfoContainer {
+  padding-left: 100px;
+  /* background-color: aquamarine; */
+}
+
+.personalInfoContainer p {
+  line-height: 22px;
+  margin-bottom: 30px;
+  /* background-color: aquamarine; */
+}
+
+.contentImageContainer {
+  height: 460px;
+  width: 460px;
+  /* background-color: rgb(236, 236, 236); */
+  /* border-radius: 200px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+}
+
+.contactButton {
+  outline: none;
+  border: none;
+  height: 40px;
+  border: 1px solid #2b3241;
+  background-color: white;
+  padding: 0 40px;
+  font: 14px Montserrat, "Source Han Sans TC", sans-serif;
+}
+
+.contactButton:hover {
+  cursor: pointer;
+  background-color: #2b3241;
+  color: white;
+}
+
+.achievementContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.year {
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.achievement {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.achievementInfo {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  /* background-color: rebeccapurple; */
+}
+
+footer p {
+  line-height: 60px;
+  color: #909090;
 }
 
 .heroBanner {

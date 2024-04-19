@@ -8,7 +8,7 @@ import empty from "@site/static/img/empty.png";
 
 export default function Works() {
   return (
-    <Layout title="Work" description="Here's the work page">
+    // <Layout title="Work" description="Here's the work page">
       <div className={classes.allWorkContainer}>
         <div className={classes.work}>
           <a href="/work/more-or-less">
@@ -42,6 +42,6 @@ export default function Works() {
           <h3 className={classes.workTitle}>即将上线...</h3>
         </div>
       </div>
-    </Layout>
+    // </Layout>
   );
 }
