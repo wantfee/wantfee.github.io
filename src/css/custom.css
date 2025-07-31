@@ -4,6 +4,9 @@
  * work well for content-centric websites.
  */
 
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #434343;
@@ -54,7 +57,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font: 14px Montserrat, "Source Han Sans TC", sans-serif;
+  font: 14px Poppins, "Source Han Sans TC", sans-serif;
 }
 
 h1 {
