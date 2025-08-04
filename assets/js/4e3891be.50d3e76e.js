@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7599],{261:e=>{e.exports=JSON.parse('{"label":"SwiftUI","permalink":"/blog/tags/swift-ui","allTagsPath":"/blog/tags","count":8}')}}]);
