@@ -5,12 +5,11 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import styles from "./index.module.css";
+import Header from "@site/src/components/Header";
 import {
   ChromeFilled,
   CodeFilled,
   CompassFilled,
-  DribbbleOutlined,
-  GithubOutlined,
 } from "@ant-design/icons";
 
 function HomepageHeader() {
@@ -31,32 +30,7 @@ export default function Home(): JSX.Element {
     <div className={styles.container}>
       <div className={styles.contentContainer}>
         {/* Header */}
-        <div className={styles.header}>
-          <div className={styles.navi}>
-            <span className={styles.naviItem}>
-              <a href="/work">Works</a>
-            </span>
-            <span className={styles.naviItem}>
-              <a href="/blog">Blog</a>
-            </span>
-            <span className={styles.naviItem}>
-              <a href="/about">About</a>
-            </span>
-          </div>
-          <div className={styles.logo}>
-            Man<span className={styles.logoLetters}>ta</span>App
-          </div>
-          <div className={styles.social}>
-            <span className={styles.socialItem}>
-              <DribbbleOutlined />
-            </span>
-            <span className={styles.socialItem}>
-              <a href="https://github.com/wantfee">
-                <GithubOutlined />
-              </a>
-            </span>
-          </div>
-        </div>
+        <Header />
 
         {/* Main Content - Three Column Layout */}
         <div className={styles.mainContent}>

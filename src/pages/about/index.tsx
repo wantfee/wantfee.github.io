@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import classes from "./index.module.css";
+import Header from "@site/src/components/Header";
 import {
   UserOutlined,
   TrophyOutlined,
@@ -17,33 +18,7 @@ const About = () => {
     <div className={classes.container}>
       <div className={classes.contentContainer}>
         {/* Header */}
-        <div className={classes.header}>
-          <div className={classes.navi}>
-            <span className={classes.naviItem}>
-              <a href="/work">作品</a>
-            </span>
-            <span className={classes.naviItem}>
-              <a href="/blog">博客</a>
-            </span>
-            <span className={classes.naviItem}>
-              <a href="/about">关于</a>
-            </span>
-          </div>
-          <div className={classes.logo}>
-            <span></span>
-            Man<span className={classes.logoLetters}>ta</span>App
-          </div>
-          <div className={classes.social}>
-            <span className={classes.socialItem}>
-              <DribbbleOutlined />
-            </span>
-            <span className={classes.socialItem}>
-              <a href="https://github.com/wantfee">
-                <GithubOutlined />
-              </a>
-            </span>
-          </div>
-        </div>
+        <Header currentPage="about" />
 
         {/* Main Content */}
         <div className={classes.mainContent}>

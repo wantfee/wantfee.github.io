@@ -345,7 +345,7 @@
   }
 
   .header {
-    height: 80px;
+    height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -381,7 +381,7 @@
   .introSection {
     flex-direction: row;
     text-align: left;
-    gap: 60px;
+    gap: 100px;
     align-items: flex-start;
   }
 
