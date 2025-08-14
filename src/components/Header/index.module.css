@@ -47,11 +47,44 @@
   color: #ee6c4d;
 }
 
+/* 新博客文章提示点 */
+.naviItem {
+  position: relative;
+}
+
+.newBlogDot {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff4757;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .social {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  align-items: center;
 }
 
 .socialItem {
@@ -68,6 +101,57 @@
 .socialItem a {
   color: inherit;
   text-decoration: none;
+}
+
+/* 语言切换样式 */
+.languageSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.languageItem {
+  display: flex;
+  align-items: center;
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  color: #333;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.languageButton:hover {
+  color: #ee6c4d;
+  background-color: rgba(238, 108, 77, 0.1);
+}
+
+.languageButton.active {
+  color: #ee6c4d;
+  background-color: rgba(238, 108, 77, 0.1);
+  font-weight: 500;
+}
+
+.languageButton.active:hover {
+  color: #ee6c4d;
+  background-color: rgba(238, 108, 77, 0.1);
+}
+
+.languageDivider {
+  color: #ccc;
+  font-weight: 300;
+  margin: 0 2px;
 }
 
 /* PC端样式 */
@@ -105,6 +189,16 @@
     justify-content: flex-end;
     gap: 20px;
   }
+
+  .languageSwitch {
+    margin-right: 20px;
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .languageButton {
+    padding: 6px 10px;
+  }
 }
 
 /* 移动端导航栏调整 */
@@ -132,5 +226,18 @@
     order: 3;
     justify-content: center;
     gap: 15px;
+  }
+
+  .languageSwitch {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .languageButton {
+    padding: 3px 6px;
+  }
+
+  .languageDivider {
+    margin: 0 1px;
   }
 }

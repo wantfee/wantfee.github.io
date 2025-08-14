@@ -4,11 +4,18 @@ import FloenvyProductPage from "@site/static/img/floenvy-product-page.svg";
 import floenvy from "@site/static/img/floenvy.jpg";
 import mobileFeature from "@site/static/img/floenvy-mobile-feature.png";
 import productPage from "@site/static/img/floenvy-product-page.png";
+import { Link } from "react-router-dom";
+import { ArrowLeftOutlined } from "@ant-design/icons";
 
 export default function Hello() {
   return (
-    // <Layout title="Work" description="Here's the work page">
     <div className={classes.allContainer}>
+      <div className={classes.backButton}>
+        <Link to="/work" className={classes.backButtonLink}>
+          <ArrowLeftOutlined style={{marginRight: "10px"}}/>
+          Back to Work
+        </Link>
+      </div>
       <div>
         <h1>FloEnvy</h1>
         <p className={classes.description}>
@@ -28,6 +35,5 @@ export default function Hello() {
         />
       </div>
     </div>
-    // </Layout>
   );
 }

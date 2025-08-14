@@ -1,12 +1,20 @@
 import React from "react";
-import classes from "./floenvy.module.css";
+import classes from "./growlink.module.css";
 import growlinkEcosystemThumbnail from "@site/static/img/growlink-ecosystem-thumbnail.png";
-// import growlinkEcosystemLandingPage from "@site/static/img/growlink-ecosystem-landing-page.png";
+import growlinkConnectControllerGraphic from "@site/static/img/connect-controller-graphic.jpg";
+import { Link } from "react-router-dom";
+import { ArrowLeftOutlined } from "@ant-design/icons";
+
 
 export default function Hello() {
   return (
-    // <Layout title="Work" description="Here's the work page">
     <div className={classes.allContainer}>
+      <div className={classes.backButton}>
+        <Link to="/work" className={classes.backButtonLink}>
+          <ArrowLeftOutlined style={{marginRight: "10px"}}/>
+          Back to Work
+        </Link>
+      </div>
       <div>
         <h1>Growlink Ecosystem Concept</h1>
         <p className={classes.description}>
@@ -17,14 +25,11 @@ export default function Hello() {
           src={growlinkEcosystemThumbnail}
           style={{ width: "100%", marginBottom: "30px" }}
         />
-        {/* <FloenvyProductPage style={{maxWidth:"1200px"}}/>; */}
-        {/* <h2>Mobile Feature Landing Page</h2>
         <img
-          src={growlinkEcosystemLandingPage}
-          style={{ width: "100%", marginBottom: "10px" }}
-        /> */}
+          src={growlinkConnectControllerGraphic}
+          style={{ width: "100%", marginBottom: "30px" }}
+        />
       </div>
     </div>
-    // </Layout>
   );
 }

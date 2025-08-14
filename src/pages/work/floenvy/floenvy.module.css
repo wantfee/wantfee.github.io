@@ -5,19 +5,39 @@
 
 .allContainer h1{
   font-size: 42px;
+  font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .allContainer h2{
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 
 .description{
   margin-bottom: 60px;
+  color: #666;
 }
 
 .allContainer img{
   border-radius: 8px;
+}
+
+.backButtonLink{
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #a2a2a2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.backButtonLink:hover{
+  text-decoration: none;
 }

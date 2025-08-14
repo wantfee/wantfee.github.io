@@ -6,11 +6,9 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import styles from "./index.module.css";
 import Header from "@site/src/components/Header";
-import {
-  ChromeFilled,
-  CodeFilled,
-  CompassFilled,
-} from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
+import { ChromeFilled, CodeFilled, CompassFilled } from "@ant-design/icons";
+import "../i18n"; // 导入i18n配置
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -26,6 +24,8 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
@@ -38,30 +38,21 @@ export default function Home(): JSX.Element {
             {/* Left Column - Services */}
             <div className={styles.leftColumn}>
               <div className={styles.serviceContainer}>
-                <h2>Services</h2>
+                <h2>{t('services')}</h2>
                 <div className={styles.serviceItemContainer}>
                   <CompassFilled style={{ fontSize: "30px" }} />
-                  <h3>UI/UX Design</h3>
-                  <p>
-                    Hyper-fine polish your digital interface with my over 10 years
-                    UI/UX design experience.
-                  </p>
+                  <h3>{t('uiUxDesign')}</h3>
+                  <p>{t('uiUxDescription')}</p>
                 </div>
                 <div className={styles.serviceItemContainer}>
                   <CodeFilled style={{ fontSize: "30px" }} />
-                  <h3>Web Development</h3>
-                  <p>
-                    Hyper-fine polish your digital interface with my over 10 years
-                    UI/UX design experience.
-                  </p>
+                  <h3>{t('webDevelopment')}</h3>
+                  <p>{t('webDevelopmentDescription')}</p>
                 </div>
                 <div className={styles.serviceItemContainer}>
                   <ChromeFilled style={{ fontSize: "30px" }} />
-                  <h3>Webflow/Squarespace</h3>
-                  <p>
-                    Hyper-fine polish your digital interface with my over 10 years
-                    UI/UX design experience.
-                  </p>
+                  <h3>{t('webflowSquarespace')}</h3>
+                  <p>{t('webflowSquarespaceDescription')}</p>
                 </div>
               </div>
             </div>
@@ -82,33 +73,27 @@ export default function Home(): JSX.Element {
             {/* Right Column - Personal Info */}
             <div className={styles.rightColumn}>
               <div className={styles.personalInfoContainer}>
-                <h2>App Changes Life</h2>
-                <p>
-                  Hi! I'm JeffWang. A UI/UX desginer crafting visually stunning
-                  and user-friendly interface that blend innovation with
-                  functionality.
-                </p>
-                <p>
-                  To make a static interface into a real product，I'm obsessed
-                  with code. Now as a web developer, I can convert the interface
-                  to real product smoothly.
-                </p>
-                <button className={styles.contactButton}>Contact me</button>
+                <h2>{t('appChangesLife')}</h2>
+                <p>{t('personalIntro')}</p>
+                <p>{t('codeObsession')}</p>
+                <a href="/work" className={styles.learnMoreLink}>
+                  <button className={styles.learnMoreButton}>{t('learnMore')}</button>
+                </a>
                 <div className={styles.achievementContainer}>
                   <div>
                     <div className={styles.achievement}>
-                      10<span className={styles.year}>Years</span>
+                      10<span className={styles.year}>{t('years')}</span>
                     </div>
-                    <div className={styles.achievementInfo}>Experience</div>
+                    <div className={styles.achievementInfo}>{t('experience')}</div>
                   </div>
                   <div>
                     <div className={styles.achievement}>100+</div>
-                    <div className={styles.achievementInfo}>UI/UX Projects</div>
+                    <div className={styles.achievementInfo}>{t('uiUxProjects')}</div>
                   </div>
                   <div>
                     <div className={styles.achievement}>5+</div>
                     <div className={styles.achievementInfo}>
-                      Developed Projects
+                      {t('developedProjects')}
                     </div>
                   </div>
                 </div>
@@ -119,7 +104,7 @@ export default function Home(): JSX.Element {
 
         {/* Footer */}
         <footer className={styles.footer}>
-          <p>MantaApp © 2024</p>
+          <p>{t('footer')}</p>
         </footer>
       </div>
     </div>
