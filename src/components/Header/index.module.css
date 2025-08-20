@@ -7,6 +7,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  animation: headerSlideInDown 0.8s ease-out 0.2s both !important;  /* 延迟0.2秒，避免与PageTransition冲突 */
+}
+
+/* Header滑入动画 - 使用更具体的名称避免冲突 */
+@keyframes headerSlideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logo {
@@ -14,17 +27,28 @@
   font-weight: 700;
   flex: 1;
   text-align: center;
+  transition: transform 0.3s ease;  /* Logo悬停动画 */
+}
+
+.logo:hover {
+  transform: scale(1.05);  /* 悬停时轻微放大 */
 }
 
 .logoLetters {
   color: #ee6c4d;
+  transition: color 0.3s ease;  /* 字母颜色过渡 */
+}
+
+.logo:hover .logoLetters {
+  color: #ff8a65;  /* 悬停时颜色变亮 */
 }
 
 .navi {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  align-items: center;
+  gap: 30px;  /* 移除gap，因为现在有分隔符 */
 }
 
 .naviItem {
@@ -35,16 +59,45 @@
 .naviItem a {
   color: #333;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;  /* 所有属性过渡 */
+  position: relative;
+  padding: 5px 0;
 }
 
 .naviItem a:hover {
   color: #ee6c4d;
+  transform: translateY(-2px);  /* 悬停时向上移动 */
+}
+
+/* 导航链接下划线动画 */
+.naviItem a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ee6c4d;
+  transition: width 0.3s ease;  /* 下划线展开动画 */
+}
+
+.naviItem a:hover::after {
+  width: 100%;  /* 悬停时下划线展开 */
 }
 
 /* 当前页面状态 */
 .naviItem a.active {
   color: #ee6c4d;
+}
+
+/* 导航分隔符 */
+.naviDivider {
+  color: #ccc;
+  font-weight: 300;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
 }
 
 /* 新博客文章提示点 */
@@ -62,6 +115,24 @@
   border-radius: 50%;
   display: inline-block;
   animation: pulse 2s infinite;
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);  /* 发光效果 */
+}
+
+/* 新博客提示点悬停效果 */
+.naviItem:hover .newBlogDot {
+  animation: bounce 0.6s ease-in-out;  /* 悬停时弹跳动画 */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes pulse {
@@ -90,12 +161,18 @@
 .socialItem {
   font-size: 20px;
   color: #333;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;  /* 所有属性过渡 */
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialItem:hover {
-  cursor: pointer;
   color: #ee6c4d;
+  transform: scale(1.1);  /* 悬停时放大并轻微旋转 */
 }
 
 .socialItem a {
@@ -130,22 +207,46 @@
   font-family: inherit;
   cursor: pointer;
   font-size: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 语言按钮波纹效果 */
+.languageButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(238, 108, 77, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.languageButton:active::before {
+  width: 300px;
+  height: 300px;
 }
 
 .languageButton:hover {
   color: #ee6c4d;
   background-color: rgba(238, 108, 77, 0.1);
+  transform: translateY(-1px);  /* 悬停时轻微上移 */
 }
 
 .languageButton.active {
   color: #ee6c4d;
   background-color: rgba(238, 108, 77, 0.1);
   font-weight: 500;
+  transform: scale(1.05);  /* 激活状态轻微放大 */
 }
 
 .languageButton.active:hover {
   color: #ee6c4d;
-  background-color: rgba(238, 108, 77, 0.1);
+  background-color: rgba(238, 108, 77, 0.15);
+  transform: scale(1.05) translateY(-1px);
 }
 
 .languageDivider {
@@ -180,7 +281,8 @@
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    align-items: center;
+    gap: 30px;  /* 移除gap，因为现在有分隔符 */
   }
 
   .social {
@@ -197,7 +299,7 @@
   }
 
   .languageButton {
-    padding: 6px 10px;
+    padding: 2px 12px;
   }
 }
 
@@ -213,7 +315,8 @@
   .navi {
     order: 1;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 0;  /* 移除gap，因为现在有分隔符 */
   }
 
   .logo {

@@ -7,6 +7,9 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* 导入动画样式 */
+@import './animations.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #434343;
@@ -58,6 +61,17 @@ p {
   margin: 0;
   padding: 0;
   font: 14px Poppins, "Source Han Sans TC", sans-serif;
+}
+
+/* 防止页面出现不必要的滚动条 */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1 {

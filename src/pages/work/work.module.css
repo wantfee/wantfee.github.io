@@ -3,84 +3,55 @@
 .container {
   background-color: white;
   min-height: 100vh;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
+/* 页面淡入动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 内容容器动画 */
 .contentContainer {
   padding: 0 6vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  animation: slideInFromLeft 0.8s ease-out;
 }
 
-.header {
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+/* 滑动过渡效果 */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.logo {
-  font-size: 42px;
-  font-weight: 700;
-  flex: 1;
-  text-align: center;
+/* 作品卡片动画 */
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-.logoLetters {
-  color: #ee6c4d;
-}
-
-.navi {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-}
-
-.naviItem {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.naviItem a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.naviItem a:hover {
-  color: #ee6c4d;
-}
-
-/* 当前页面状态 - 作品页面 */
-.naviItem a[href="/work"] {
-  color: #ee6c4d;
-  font-weight: 600;
-}
-
-.social {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.socialItem {
-  font-size: 20px;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.socialItem:hover {
-  color: #ee6c4d;
-}
-
-.socialItem a {
-  color: inherit;
-  text-decoration: none;
-}
+/* Header样式已移至Header组件中，这里删除重复定义 */
 
 .mainContent {
   flex: 1;
@@ -105,14 +76,48 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  animation: cardSlideIn 0.8s ease-out;
+  animation-fill-mode: both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.work:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.work:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.work:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.work:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .work img {
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.work:hover img {
+  transform: scale(1.05);
 }
 
 .workTitle {
   color: #434343;
+  transition: color 0.3s ease;
+}
+
+.work:hover .workTitle {
+  color: #ee6c4d;
 }
 
 .footer {
@@ -178,6 +183,7 @@
     padding: 0;
   }
 
+  /* 最近作品容器动画 */
   .recentWorkContainer {
     display: flex;
     flex-direction: row;
@@ -186,10 +192,12 @@
     gap: 40px;
     border-bottom: 1px solid #eee;
     padding: 60px 40px;
+    animation: slideInFromLeft 0.8s ease-out;
   }
 
   .recentWorkInfo {
     flex: 1;
+    animation: fadeIn 1s ease-out 0.3s both;
   }
 
   .recentWorkTitle {
@@ -207,6 +215,18 @@
     border-radius: 20px;
     overflow: hidden;
     flex: 1;
+    animation: slideInFromRight 0.8s ease-out 0.2s both;
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .recentWorkImage img {

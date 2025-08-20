@@ -12,75 +12,7 @@
   flex-direction: column;
 }
 
-.header {
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.logo {
-  font-size: 42px;
-  font-weight: 700;
-  flex: 1;
-  text-align: center;
-}
-
-.logoLetters {
-  color: #ee6c4d;
-}
-
-.navi {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-}
-
-.naviItem {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.naviItem a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.naviItem a:hover {
-  color: #ee6c4d;
-}
-
-/* 当前页面状态 - 关于页面 */
-.naviItem a[href="/about"] {
-  color: #ee6c4d;
-  font-weight: 600;
-}
-
-.social {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.socialItem {
-  font-size: 20px;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.socialItem:hover {
-  color: #ee6c4d;
-}
-
-.socialItem a {
-  color: inherit;
-  text-decoration: none;
-}
+/* Header样式已移至Header组件中，这里删除重复定义 */
 
 .mainContent {
   flex: 1;

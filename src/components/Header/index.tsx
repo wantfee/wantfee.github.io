@@ -39,6 +39,7 @@ export default function Header({ currentPage, newBlogPosts }: HeaderProps) {
             {t('works')}
           </a>
         </span>
+        <span className={classes.naviDivider}>/</span>
         <span className={classes.naviItem}>
           <a
             href="/blog"
@@ -48,6 +49,7 @@ export default function Header({ currentPage, newBlogPosts }: HeaderProps) {
             {showNewBlogDot && <span className={classes.newBlogDot}></span>}
           </a>
         </span>
+        <span className={classes.naviDivider}>/</span>
         <span className={classes.naviItem}>
           <a
             href="/about"
