@@ -32,6 +32,7 @@
   align-items: center;
   text-align: center;
   gap: 40px;
+  animation: fadeIn 0.8s ease-out;
 }
 
 .avatarContainer {
@@ -39,9 +40,11 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  animation: bounceIn 1s ease-out 0.2s both;
 }
 
 .avatar {
+  margin-bottom: 10px;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -50,22 +53,31 @@
   align-items: center;
   justify-content: center;
   border: 3px solid #ee6c4d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(238, 108, 77, 0.2);
 }
 
 .name {
   font-size: 28px;
   font-weight: 600;
   margin: 0;
+  animation: slideInUp 0.8s ease-out 0.4s both;
 }
 
 .title {
   font-size: 14px;
   color: #666;
   margin: 0;
+  animation: slideInUp 0.8s ease-out 0.6s both;
 }
 
 .bioContainer {
   max-width: 600px;
+  animation: slideInUp 0.8s ease-out 0.8s both;
 }
 
 .sectionTitle {
@@ -73,6 +85,7 @@
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
+  animation: slideInLeft 0.8s ease-out both;
 }
 
 .bioText {
@@ -80,6 +93,15 @@
   line-height: 1.8;
   color: #666;
   margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-out both;
+}
+
+.bioText:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bioText:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 /* 技能部分 */
@@ -87,6 +109,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  animation: fadeIn 0.8s ease-out 1s both;
 }
 
 .skillsGrid {
@@ -100,6 +123,25 @@
   padding: 30px;
   border-radius: 12px;
   border-left: 4px solid #ee6c4d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInUp 0.8s ease-out both;
+}
+
+.skillCategory:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.skillCategory:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.skillCategory:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.skillCategory:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .skillTitle {
@@ -120,7 +162,14 @@
   color: #666;
   position: relative;
   padding-left: 20px;
+  animation: slideInLeft 0.6s ease-out both;
 }
+
+.skillList li:nth-child(1) { animation-delay: 0.1s; }
+.skillList li:nth-child(2) { animation-delay: 0.2s; }
+.skillList li:nth-child(3) { animation-delay: 0.3s; }
+.skillList li:nth-child(4) { animation-delay: 0.4s; }
+.skillList li:nth-child(5) { animation-delay: 0.5s; }
 
 .skillList li::before {
   content: "•";
@@ -135,6 +184,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  animation: fadeIn 0.8s ease-out 1.8s both;
 }
 
 .timeline {
@@ -147,6 +197,19 @@
   display: flex;
   gap: 20px;
   position: relative;
+  animation: slideInRight 0.8s ease-out both;
+}
+
+.timelineItem:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.timelineItem:nth-child(2) {
+  animation-delay: 2.2s;
+}
+
+.timelineItem:nth-child(3) {
+  animation-delay: 2.4s;
 }
 
 .timelineDot {
@@ -156,6 +219,19 @@
   border-radius: 50%;
   flex-shrink: 0;
   margin-top: 8px;
+  animation: scaleIn 0.6s ease-out both;
+}
+
+.timelineItem:nth-child(1) .timelineDot {
+  animation-delay: 2.1s;
+}
+
+.timelineItem:nth-child(2) .timelineDot {
+  animation-delay: 2.3s;
+}
+
+.timelineItem:nth-child(3) .timelineDot {
+  animation-delay: 2.5s;
 }
 
 .timelineContent {
@@ -195,6 +271,7 @@
   align-items: center;
   gap: 40px;
   text-align: center;
+  animation: fadeIn 0.8s ease-out 2.6s both;
 }
 
 .contactGrid {
@@ -211,11 +288,39 @@
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideInUp 0.8s ease-out both;
+}
+
+.contactItem:nth-child(1) {
+  animation-delay: 2.8s;
+}
+
+.contactItem:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.contactItem:nth-child(3) {
+  animation-delay: 3.2s;
+}
+
+.contactItem:nth-child(4) {
+  animation-delay: 3.4s;
+}
+
+.contactItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .contactIcon {
   font-size: 24px;
   color: #ee6c4d;
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover .contactIcon {
+  transform: scale(1.2);
 }
 
 .contactInfo h4 {
@@ -240,11 +345,14 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  animation: scaleIn 0.8s ease-out 3.6s both;
 }
 
 .contactButton:hover {
   background-color: #d55a3d;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(238, 108, 77, 0.3);
 }
 
 .footer {
@@ -252,12 +360,85 @@
   text-align: center;
   padding: 20px 0;
   border-top: 1px solid #eee;
+  animation: fadeIn 0.8s ease-out 3.8s both;
 }
 
 .footer p {
   color: #999;
   font-size: 14px;
   margin: 0;
+}
+
+/* 动画关键帧定义 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* PC端样式 */
@@ -377,5 +558,14 @@
 
   .mainContent {
     padding-top: 40px;
+  }
+}
+
+/* 减少动画偏好设置 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

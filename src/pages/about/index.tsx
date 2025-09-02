@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "@theme/Layout";
 import classes from "./index.module.css";
 import Header from "@site/src/components/Header";
+import ContactForm from "@site/src/components/ContactForm";
 import { useTranslation } from "react-i18next";
 import "../../i18n"; // 导入i18n配置
+import "../../css/animations.css"; // 导入动画样式
 import {
   UserOutlined,
   TrophyOutlined,
@@ -19,6 +21,15 @@ import {
 
 const About = () => {
   const { t } = useTranslation();
+  const [contactFormVisible, setContactFormVisible] = useState(false);
+
+  const handleContactClick = () => {
+    setContactFormVisible(true);
+  };
+
+  const handleContactFormClose = () => {
+    setContactFormVisible(false);
+  };
 
   return (
     <div className={classes.container}>
@@ -167,7 +178,12 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <button className={classes.contactButton}>{t('startCollaboration')}</button>
+              <button 
+                className={classes.contactButton}
+                onClick={handleContactClick}
+              >
+                {t('startCollaboration')}
+              </button>
             </div>
           </div>
         </div>
@@ -177,6 +193,12 @@ const About = () => {
           <p>{t('footer')}</p>
         </footer>
       </div>
+
+      {/* 联系表单弹窗 */}
+      <ContactForm 
+        visible={contactFormVisible}
+        onClose={handleContactFormClose}
+      />
     </div>
   );
 };

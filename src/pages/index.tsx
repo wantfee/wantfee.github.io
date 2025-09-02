@@ -11,6 +11,7 @@ import { ChromeFilled, CodeFilled, CompassFilled } from "@ant-design/icons";
 import AnimatedLink from "@site/src/components/AnimatedLink";
 import PageTransition from "@site/src/components/PageTransition";
 import "../i18n"; // 导入i18n配置
+import "../css/animations.css"; // 导入动画样式
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();

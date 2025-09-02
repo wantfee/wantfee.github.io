@@ -7,9 +7,6 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* 导入动画样式 */
-@import './animations.css';
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #434343;
@@ -24,6 +21,8 @@
   padding: 40px 50px;
   height: auto;
   box-shadow: none;
+  width: 1440px;
+  margin: 0 auto;
   /* background-color: transparent; */
   /* background-color: rebeccapurple; */
 }
@@ -37,13 +36,13 @@
 }
 
 .navbar__link {
-  margin-right: 20px;
+  /* margin-right: 20px; */
   margin-top: 12px;
 }
 
 .navbar__link:not(:last-child)::after {
   content: "/";
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .footer {

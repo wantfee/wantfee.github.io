@@ -10,6 +10,7 @@ import Header from "@site/src/components/Header";
 import { useTranslation } from "react-i18next";
 import PageTransition from "@site/src/components/PageTransition";
 import "../../i18n"; // 导入i18n配置
+import "../../css/animations.css"; // 导入动画样式
 
 export default function Works() {
   const { t } = useTranslation();
