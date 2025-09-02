@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7129],{8459:e=>{e.exports=JSON.parse('{"tag":{"label":"ios","permalink":"/blog/tags/ios","allTagsPath":"/blog/tags","count":9,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/ios","page":1,"postsPerPage":10,"totalPages":1,"totalCount":9,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

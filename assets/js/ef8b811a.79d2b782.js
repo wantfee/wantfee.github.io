@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8947],{6600:e=>{e.exports=JSON.parse('{"authors":[{"name":"JeffWang","title":"Web developer & UI designer","url":"https://wantfee.github.io","email":"59550481@qq.com","key":"JeffWang","page":null,"count":23}]}')}}]);
