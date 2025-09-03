@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./moreOrLess.module.css";
 import moreOrLess from "@site/static/img/moreorless.png";
 import { Link } from "react-router-dom";
-import { ArrowLeftOutlined, LoadingOutlined } from "@ant-design/icons";
+import { ArrowLeftOutlined } from "@ant-design/icons";
 import "../../../css/animations.css"; // 导入动画样式
 
 export default function Hello() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <div className={classes.allContainer}>
       <div className={classes.backButton}>
@@ -28,22 +22,12 @@ export default function Hello() {
         
         {/* 主图片 */}
         <div className={classes.imageContainer}>
-          {!imageLoaded && (
-            <div className={classes.imagePlaceholder}>
-              <LoadingOutlined className={classes.loadingIcon} />
-              <p>Loading image...</p>
-            </div>
-          )}
           <img 
             src={moreOrLess} 
             style={{ 
               width: "100%", 
-              marginBottom: "30px",
-              opacity: imageLoaded ? 1 : 0,
-              transition: "opacity 0.3s ease"
+              marginBottom: "30px"
             }}
-            onLoad={handleImageLoad}
-            loading="lazy"
             alt="More or less app"
           />
         </div>
