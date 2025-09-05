@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wantfee.github.io/blog</id>
-    <title>UI designer &amp; Web Developer. Blog</title>
+    <title>UI designer &amp; App Developer. Blog</title>
     <updated>2022-12-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wantfee.github.io/blog"/>
-    <subtitle>UI designer &amp; Web Developer. Blog</subtitle>
+    <subtitle>UI designer &amp; App Developer. Blog</subtitle>
     <icon>https://wantfee.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[重复的原则——从音乐聊到UI设计]]></title>
