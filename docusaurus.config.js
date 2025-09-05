@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "UI designer & Web Developer.",
+  title: "UI designer & App Developer.",
   tagline: "I am JeffWang",
   url: "https://wantfee.github.io/",
   baseUrl: "/",
@@ -73,7 +73,7 @@ const config = {
       },
       footer: {
         style: "light",
-        copyright: `Copyright © ${new Date().getFullYear()} wantfee.github.io. Built with Docusaurus.`,
+        copyright: `Copyright © 2025 MantaApp. 保留所有权利。`,
       },
       prism: {
         theme: lightCodeTheme,

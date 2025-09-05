@@ -94,7 +94,7 @@ const About = () => {
                     <li>{t('figmaSketch')}</li>
                     <li>{t('adobeCreativeSuite')}</li>
                     <li>{t('vsCode')}</li>
-                    <li>{t('docusaurus')}</li>
+                    <li>{t('cursor')}</li>
                     <li>{t('github')}</li>
                   </ul>
                 </div>
@@ -123,7 +123,7 @@ const About = () => {
                 <div className={classes.timelineItem}>
                   <div className={classes.timelineDot}></div>
                   <div className={classes.timelineContent}>
-                    <h3 className={classes.timelineTitle}>{t('webDeveloper')}</h3>
+                    <h3 className={classes.timelineTitle}>{t('appDeveloper')}</h3>
                     <p className={classes.timelineCompany}>{t('flyingFishSonar')}</p>
                     <p className={classes.timelinePeriod}>{t('period20142020')}</p>
                     <p className={classes.timelineDescription}>

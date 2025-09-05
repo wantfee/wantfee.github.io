@@ -13,15 +13,15 @@ const resources = {
       
       // 首页内容
       services: 'Services',
-      webDevelopment: 'Web Development',
+      appDevelopment: 'App Development',
       webflowSquarespace: 'Webflow/Squarespace',
       uiUxDescription: 'With over 10 years of UI/UX design experience, from user research to prototype design, I create digital interfaces with excellent user experience and visually stunning design, driving user engagement and business growth.',
-      webDevelopmentDescription: 'Using modern technologies like React, Angular, TypeScript and responsive design principles to transform static digital interfaces into powerful web applications.',
+      appDevelopmentDescription: 'Using modern technologies like React, Angular, TypeScript, Swift and responsive design principles to transform static digital interfaces into powerful app applications.',
       webflowSquarespaceDescription: 'Proficient in operating no-code platforms to quickly build stunning professional websites. Perfect for businesses that need rapid deployment and simple content management.',
       appChangesLife: 'App Changes Life',
-      personalIntroP1: "Hi! I'm JeffWang.",
-      personalIntroP2: "A UI/UX designer and Web developer with over 10 years of experience, focused on creating interfaces with excellent user experience and visually stunning design. I'm committed to combining design thinking with technical implementation to provide clients with complete solutions from concept to product.",
-      personalIntroP3: "To make a static interface into a real product，I'm obsessed with code. Now as a web developer, I can convert the interface to real product smoothly.",
+      personalIntroP1: "Hi! I'm JeffWang, a UI/UX designer and App developer with over 10 years of experience.",
+      personalIntroP2: "I focus on creating Apps with visually stunning interfaces, comprehensive functionality, and excellent user experience. I'm committed to combining design thinking with technical implementation to provide clients with complete solutions from concept to product.",
+      personalIntroP3: "I'm proficient in using AI programming tools like Cursor to accelerate development. This allows me to transform static interfaces into real products more efficiently while maintaining high code quality.",
       learnMore: 'Learn More',
       experience: 'Experience',
       years: 'Years',
@@ -38,10 +38,10 @@ const resources = {
       
       // 关于页面
       aboutMe: 'About Me',
-      uiUxDesigner: 'UI/UX Designer & Web Developer',
-      bio1: 'Hello! I am JeffWang, a UI/UX designer and Web developer with over 10 years of experience. I focus on creating visually stunning and user-friendly interfaces that blend innovation with functionality.',
-      bio2: 'In the process of transforming static interfaces into real products, I am obsessed with code. Now as a web developer, I can smoothly convert designs into real products.',
-      bio3: 'I currently live in Xi\'an, China.',
+      uiUxDesigner: 'UI/UX Designer & App Developer',
+      bio1: "Hi! I'm JeffWang, a UI/UX designer and App developer with over 10 years of experience.",
+      bio2: "I focus on creating Apps with visually stunning interfaces, comprehensive functionality, and excellent user experience. I'm committed to combining design thinking with technical implementation to provide clients with complete solutions from concept to product.",
+      bio3: "I'm proficient in using AI programming tools like Cursor to accelerate development. This allows me to transform static interfaces into real products more efficiently while maintaining high code quality.I currently live in Xi\'an, China.",
       skills: 'Professional Skills',
       designSkills: 'Design Skills',
       developmentSkills: 'Development Skills',
@@ -49,7 +49,7 @@ const resources = {
       workExperience: 'Work Experience',
       seniorDesigner: 'Senior UI/UX Designer',
       freelancer: 'Freelancer',
-      webDeveloper: 'Web Developer',
+      appDeveloper: 'App Developer',
       independentDev: 'Independent Development',
       designLearning: 'Design Learning & Exploration',
       continuousLearning: 'Continuous Learning',
@@ -75,7 +75,7 @@ const resources = {
       figmaSketch: 'Figma/Sketch',
       adobeCreativeSuite: 'Adobe Creative Suite',
       vsCode: 'VS Code',
-      docusaurus: 'Docusaurus',
+      cursor: 'Cursor',
       github: 'GitHub',
       
       // 工作经历
@@ -94,7 +94,7 @@ const resources = {
       xian: 'Xi\'an',
       
       // 通用
-      footer: 'MantaApp © 2024'
+      footer: 'Copyright © 2025 MantaApp. 保留所有权利。'
     }
   },
   zh: {
@@ -106,15 +106,15 @@ const resources = {
       
       // 首页内容
       services: '服务',
-      webDevelopment: 'Web 开发',
+      appDevelopment: 'App 开发',
       webflowSquarespace: 'Webflow/Squarespace',
       uiUxDescription: '凭借超过10年的UI/UX设计经验，从用户研究到原型设计，创造用户体验优秀且视觉震撼的数字界面，推动用户参与度和业务增长。',
-      webDevelopmentDescription: '使用React、Angular、TypeScript等现代技术和响应式设计原则，将静态的数字界面转化为功能强大的Web应用程序。',
+      appDevelopmentDescription: '使用React、Angular、TypeScript、Swift等现代技术和响应式设计原则，将静态的数字界面转化为功能强大的App应用程序。',
       webflowSquarespaceDescription: '熟练操作无代码平台，快速构建令人惊艳的专业网站。完美适合需要快速部署和简单内容管理的企业。',
       appChangesLife: '应用改变生活',
-      personalIntroP1: '你好！我是JeffWang。',
-      personalIntroP2: '一名拥有超过10年经验的UI/UX设计师和Web开发者，专注于创造用户体验优秀且视觉震撼的界面。我致力于将设计思维与技术实现相结合，为客户提供从概念到产品的完整解决方案。',
-      personalIntroP3: '为了将静态界面转化为真实产品，我对代码有着执着的追求。现在作为一名Web开发者，我能够流畅地将设计转化为真实的产品。',
+      personalIntroP1: '你好！我是JeffWang。一名拥有超过10年经验的UI/UX设计师和App开发者。',
+      personalIntroP2: '我专注于创造拥有视觉震撼的界面、功能细致完备且用户体验优秀的App。致力于将设计思维与技术实现相结合，为客户提供从概念到产品的完整解决方案。',
+      personalIntroP3: '我熟练使用AI编程工具如Cursor来加速开发进程。这使我能够更高效地将静态界面转化为真实产品，同时保持高质量的代码标准。',
       learnMore: '了解更多',
       experience: '经验',
       years: '年',
@@ -131,10 +131,10 @@ const resources = {
       
       // 关于页面
       aboutMe: '关于我',
-      uiUxDesigner: 'UI/UX 设计师 & Web 开发者',
-      bio1: '你好！我是 JeffWang，一名拥有超过10年经验的 UI/UX 设计师和 Web 开发者。我专注于创造视觉震撼且用户友好的界面，将创新与功能性完美融合。',
-      bio2: '从静态界面到真实产品的转化过程中，我对代码有着执着的追求。现在作为一名 Web 开发者，我能够流畅地将设计转化为真实的产品。',
-      bio3: '我目前生活在中国，西安。',
+      uiUxDesigner: 'UI/UX 设计师 & App 开发者',
+      bio1: '你好！我是JeffWang。一名拥有超过10年经验的UI/UX设计师和App开发者。',
+      bio2: '我专注于创造拥有视觉震撼的界面、功能细致完备且用户体验优秀的App。致力于将设计思维与技术实现相结合，为客户提供从概念到产品的完整解决方案。',
+      bio3: '我熟练使用AI编程工具如Cursor来加速开发进程。这使我能够更高效地将静态界面转化为真实产品，同时保持高质量的代码标准。我目前生活在中国，西安。',
       skills: '专业技能',
       designSkills: '设计技能',
       developmentSkills: '开发技能',
@@ -142,7 +142,7 @@ const resources = {
       workExperience: '工作经历',
       seniorDesigner: '资深 UI/UX 设计师',
       freelancer: '自由职业者',
-      webDeveloper: 'Web 开发者',
+      appDeveloper: 'App 开发者',
       independentDev: '独立开发',
       designLearning: '设计学习与探索',
       continuousLearning: '持续学习',
@@ -168,7 +168,7 @@ const resources = {
       figmaSketch: 'Figma/Sketch',
       adobeCreativeSuite: 'Adobe Creative Suite',
       vsCode: 'VS Code',
-      docusaurus: 'Docusaurus',
+      cursor: 'Cursor',
       github: 'GitHub',
       
       // 工作经历
@@ -187,7 +187,7 @@ const resources = {
       xian: '西安',
       
       // 通用
-      footer: 'MantaApp © 2024'
+      footer: 'Copyright © 2025 MantaApp. 保留所有权利。'
     }
   }
 };

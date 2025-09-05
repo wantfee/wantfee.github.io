@@ -50,8 +50,8 @@ export default function Home(): JSX.Element {
                   </div>
                   <div className={styles.serviceItemContainer}>
                     <CodeFilled style={{ fontSize: "30px" }} />
-                    <h3>{t('webDevelopment')}</h3>
-                    <p>{t('webDevelopmentDescription')}</p>
+                    <h3>{t('appDevelopment')}</h3>
+                    <p>{t('appDevelopmentDescription')}</p>
                   </div>
                   <div className={styles.serviceItemContainer}>
                     <ChromeFilled style={{ fontSize: "30px" }} />
