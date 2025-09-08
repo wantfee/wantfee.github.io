@@ -14,8 +14,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
-}
+/* [data-theme="dark"] styles can be added here if needed */
 
 .navbar {
   padding: 40px 50px;
@@ -75,6 +74,54 @@ body {
 
 h1 {
   font-size: 48px;
+}
+
+/* 博客文章标题样式 */
+.title_f1Hy {
+  font-size: 2.5rem !important;  /* 40px */
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+  color: #333 !important;
+}
+
+/* 博客文章内容中的标题样式 */
+.markdown h1 {
+  font-size: 2.2rem !important;  /* 35.2px */
+  font-weight: 600 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: #333 !important;
+}
+
+.markdown h2 {
+  font-size: 1.8rem !important;  /* 28.8px */
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.8rem !important;
+  color: #333 !important;
+}
+
+.markdown h3 {
+  font-size: 1.5rem !important;  /* 24px */
+  font-weight: 600 !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.6rem !important;
+  color: #333 !important;
+}
+
+/* 博客作者信息间距调整 */
+.avatar.margin-bottom--sm {
+  margin-bottom: 1.5rem !important;  /* 从8px增加到24px */
+}
+
+/* 作者姓名和简介之间的间距 */
+.avatar__intro {
+  margin-top: 0.5rem !important;  /* 8px */
+}
+
+.avatar__name {
+  margin-bottom: 0.25rem !important;  /* 4px */
 }
 
 /* 先要使用::-webkit-scrollbar 属性使滚动条整个默认样式失效 */
