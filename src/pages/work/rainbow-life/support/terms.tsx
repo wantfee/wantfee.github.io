@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../960-grid-life/support/privacy.module.css";
+import classes from "./privacy.module.css";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import "../../../../css/animations.css";

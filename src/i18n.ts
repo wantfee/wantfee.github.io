@@ -30,8 +30,6 @@ const resources = {
       
       // 作品页面
       recentWork: 'Recent Work',
-      gridLife: '960 Grid Life',
-      gridLifeDesc: '960GridLife is a life progress visualization app based on SwiftUI, aiming to help users intuitively understand their life progress。',
       rainbowLife: 'Rainbow Life',
       rainbowLifeDesc: 'A life timeline for you and your family. Record experiences, see the stage of life you are in, and keep it with iCloud.',
       boxzooka: 'Boxzooka',
@@ -127,8 +125,6 @@ const resources = {
       
       // 作品页面
       recentWork: '近期作品',
-      gridLife: '960格子人生',
-      gridLifeDesc: '960GridLife是一款基于SwiftUI开发的人生进度可视化应用，旨在帮助用户直观地了解自己的人生进度，珍惜时间，活在当下。',
       rainbowLife: 'Rainbow Life',
       rainbowLifeDesc: '给你和家人的生命时间轴。记录经历，看见自己身处人生的哪一段，并通过 iCloud 保存在自己的设备上。',
       boxzooka: 'Boxzooka',

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../960-grid-life/960-grid-life.module.css";
+import classes from "./rainbow-life.module.css";
 import placeholder from "@site/static/img/empty.png";
 import { Link } from "react-router-dom";
 import { ArrowLeftOutlined } from "@ant-design/icons";

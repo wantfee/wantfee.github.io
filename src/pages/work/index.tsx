@@ -6,7 +6,6 @@ import moreOrLess from "@site/static/img/moreorless.png";
 import floenvy from "@site/static/img/floenvy.jpg";
 import growlinkEcosystem from "@site/static/img/growlink-ecosystem-thumbnail.png";
 import empty from "@site/static/img/empty.png";
-import gridLife from "@site/static/img/960-grid-life-thumbnail.png";
 import Header from "@site/src/components/Header";
 import { useTranslation } from "react-i18next";
 import PageTransition from "@site/src/components/PageTransition";
@@ -25,13 +24,13 @@ export default function Works() {
           
           <div className={classes.recentWorkContainer}>
             <div className={classes.recentWorkInfo}>
-              <h2 className={classes.recentWorkTitle}>{t('gridLife')}</h2>
+              <h2 className={classes.recentWorkTitle}>{t('boxzooka')}</h2>
               <p className={classes.recentWorkDescription}>
-                {t('gridLifeDesc')}
+                {t('boxzookaDesc')}
               </p>
             </div>
             <div className={classes.recentWorkImage}>
-              <img src={gridLife} />
+              <img src={boxzooka} />
             </div>
           </div>
           {/* Main Content */}
@@ -47,15 +46,6 @@ export default function Works() {
                 </a>
                 <h3 className={classes.workTitle}>{t("rainbowLife")}</h3>
                 <p className={classes.workDescription}>{t("rainbowLifeDesc")}</p>
-              </div>
-            <div className={classes.work}>
-                <a href="/work/960-grid-life">
-                  <img
-                    src={gridLife}
-                    style={{ width: "100%", marginBottom: "30px" }}
-                  />
-                </a>
-                <h3 className={classes.workTitle}>{t('gridLife')}</h3>
               </div>
               <div className={classes.work}>
                 <a href="/work/boxzooka">
