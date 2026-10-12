@@ -1,0 +1,227 @@
+.allContainer {
+  margin: 100px auto;
+  max-width: 1000px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.allContainer h1{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.allContainer h2{
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.description{
+  margin-bottom: 60px;
+  color: #666;
+  animation: slideInUp 0.8s ease-out 0.4s both;
+}
+
+.backButtonLink{
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #a2a2a2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.8s ease-out 0.1s both;
+}
+
+.backButtonLink:hover{
+  text-decoration: none;
+  background-color: #ee6c4d;
+  color: white;
+  transform: translateX(-5px);
+}
+
+/* 动画关键帧定义 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 主要内容区域 */
+.main {
+  animation: slideInUp 0.8s ease-out 0.6s both;
+}
+
+.main section {
+  margin-bottom: 40px;
+}
+
+.main h2 {
+  color: #434343;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-left: 4px solid #ee6c4d;
+  padding-left: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactInfo {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #ee6c4d;
+  border: 1px solid #eee;
+}
+
+.faqItem {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ee6c4d;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faqItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.faqItem h3 {
+  color: #434343;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+}
+
+.featuresList li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 25px;
+}
+
+.featuresList li:before {
+  content: "✓";
+  color: #ee6c4d;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.linkCard {
+  display: block;
+  padding: 20px;
+  background: #f8f9fa;
+  text-decoration: none;
+  color: #434343;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.linkCard:hover {
+  background: white;
+  border-color: #ee6c4d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 108, 77, 0.2);
+  text-decoration: none;
+  color: #434343;
+}
+
+.inlineLink {
+  color: #ee6c4d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.inlineLink:hover {
+  color: #d55a3f;
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .allContainer {
+    margin: 80px 20px 20px;
+  }
+  
+  .allContainer h1 {
+    font-size: 32px;
+  }
+  
+  .linkGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 减少动画偏好设置 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

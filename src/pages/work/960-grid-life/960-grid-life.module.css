@@ -1,0 +1,292 @@
+.allContainer {
+  margin: 100px auto;
+  max-width: 1000px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.allContainer h1{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.allContainer h2{
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.description{
+  margin-bottom: 60px;
+  color: #666;
+  animation: slideInUp 0.8s ease-out 0.4s both;
+}
+
+/* 图片容器样式 */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.imagePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.loadingIcon {
+  font-size: 24px;
+  color: #ee6c4d;
+  margin-bottom: 10px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.allContainer img{
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: scaleIn 0.8s ease-out both;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.08);
+}
+
+.allContainer img:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.allContainer img:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.allContainer img:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.allContainer img:hover {
+  transform: scale(1.02);
+}
+
+.backButtonLink{
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #a2a2a2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.8s ease-out 0.1s both;
+}
+
+.backButtonLink:hover{
+  text-decoration: none;
+  background-color: #ee6c4d;
+  color: white;
+  transform: translateX(-5px);
+}
+
+/* 动画关键帧定义 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 下载区域样式 */
+.downloadSection {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #434343;
+  animation: slideInUp 0.8s ease-out 0.6s both;
+}
+
+.downloadSection h2 {
+  color: #434343;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  border: none;
+  padding: 0;
+}
+
+.qrCodeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.qrCode {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qrCode:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.qrCodeImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.downloadText {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: #434343;
+}
+
+.downloadText strong {
+  color: #ee6c4d;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.downloadButton, .supportButton {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  min-width: 180px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.downloadButton {
+  background: #ee6c4d;
+  color: white;
+  border-color: #ee6c4d;
+}
+
+.downloadButton:hover {
+  background: #d55a3f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 108, 77, 0.3);
+  text-decoration: none;
+  color: white;
+}
+
+.supportButton {
+  background: transparent;
+  color: #434343;
+  border-color: #434343;
+}
+
+.supportButton:hover {
+  background: #434343;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 67, 67, 0.3);
+  text-decoration: none;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .downloadSection {
+    padding: 30px 20px;
+  }
+  
+  .qrCodeContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .qrCodeImage {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .downloadButton, .supportButton {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* 减少动画偏好设置 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
